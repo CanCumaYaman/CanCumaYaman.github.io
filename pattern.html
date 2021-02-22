@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+
+
+
+    <title>Can Cuma Yaman</title>
+</head>
+<body>
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="/" class="logo text-uppercase">
+                    Can Cuma Yaman
+                </a>
+            </div>
+            <div id="nav-links" class="responsive">
+                <ul>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase nav-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="/Home/Index/" class="nav-link text-uppercase">
+                            <i class="fas fa-home"></i> Ana Sayfa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Home/About" class="nav-link text-uppercase">
+
+                            <i class="fas fa-user-circle"></i> Hakkımda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Home/Contact" class="nav-link">
+                            <i class="fas fa-address-card"></i> İLETİŞİM
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+      <div class="container articles">
+    <div class="row">
+
+        <div class="col-md-8">
+
+            <h1>Design Patterns(Tasarım Desenleri)</h1>
+            <br />
+            Projelerimizi gerçekleştirirken pekçok sorunla karşılaşmışızdır. Genel olarak bu sorunlara ya kendimiz çözüm bulmuşuzdur yada başka birilerinden yardım almışızdır. Neticede sorunu çözmüşüzdür. Bundan sonraki projelerde aynı sorunla karşılaştığımız zaman hemen aklımıza bu problemi daha önce çözdüğümüz gelir ve o çözüm yoluyla yolumuza devam ederiz. İşte tasarım desenleri bu noktada bize yardımcı oluyor.<br /> Tasarım desenleri sıklıkla karşılaşılan benzer problemleri çözmek için ortaya konulmuş dilden bağımsız kalıplardır. Tasarım desenlerini 3 ana başlık altında değerlendirebiliriz.
+            <br /><br />
+            <h3>Creational Patterns (Yaratımsal Kalıplar)</h3><br />
+            Yaratımsal kalıpları bizlere nesneleri new anahtar kelimesiyle oluşturmak yerine alternatif yöntemler sunar. Yani bizlere nesnelerin oluşturulmasında yol gösteririr. 6 alt başlıkta toplanır.
+            <br />
+            <b>Singleton (Tek Nesne)</b>: Bir sınıfın yalnızca tek bir örneği olabilir.
+            <br /><b>Abstract Factory (Soyut Fabrika)</b>: Birkaç sınıf ailesinin bir örneğini oluşturur.
+            <br /><b>Builder (Kurulum)</b>: Nesne yapısını temsilinden ayırır
+            <br /><b>Factory (Fabrika)</b>: Birbirine benzeyen ili sınıfı bir sınıfta birleştirip soyutlama yapar.
+            <br /><b>Factory Method (Fabrika Metodu)</b>: Türetilmiş sınıfın örneğini oluşturur.
+            <br /><b>Prototype (Prototip)</b>:  Kopyalanacak, tamamen başlatılmış bir örnek oluşturur
+            <br /><br />
+            <h3>Structural Patterns (Yapısal Kalıplar)</h3>
+            <br />
+            Yapısal kalıplar nesnelerimiz arasındaki ilişkilerin belirlenmesini ve düzenlenmesine imkan sağlar. Kalıtım nasıl olmalı, hangi nesneleri içermeli ve sınıfların birbirlerine olan bağlılığı ne düzeyde olmalı gibi konularda yardımcı olur. Yapısal kalıplarıda 7 alt başlıkta değerlendirebiliriz. Bunlar;<br />
+            <b>Adapter (Adaptör)</b>: Birbirinden farklı sınıfların eşleme arayüzüdür.
+            <br /><b>Bridge (Köprü)</b>: Bir nesnesyle o nesnenin arayüzünü ayırır.
+            <br /><b>Composite (Ağaç Yapısı)</b>: Nesnelerin ağaç yapısı.
+            <br /><b>Decorator (Dekorasyon)</b>: Nesnelere dinamik olarak yeni görevler verme.
+            <br /><b>Facade (Ön Yüz)</b>: Tüm alt sistemleri temsili tek bir sınıf.
+            <br /><b>Flyweight (Sinek Siklet)</b>: Verimli bir paylaşım için kullanılan örnek.
+            <br /><b>Proxy (Vekil)</b>: Başka bir nesneyi temsil eden nesne.
+            <br /><br />
+            <h3>Behavioral Patterns (Davranışsal Kalıplar)</h3>
+            <br />
+            Nesne davranışlarını takip edip aralarındaki ilişkiye göre çözümler sunar. Nesneler arasındaki iletişimi doğru bir şekilde kurmamızı sağlar. Davranışsal kalıplarıda 10 alt başlıkta değerlendirebiliriz.
+            <br />
+            <b>Chain of Responsibility (Sorumluluk Zinciri)</b>: Bir nesne zincirine istek iletmenin bir yöntemidir.
+            <br /><b>Command (Komut)</b> Bir komutu nesne olarak encapsulation işlemini yerine getirmede kullanılır.
+            <br /> <b>Interpreter (Yorumlayıcı)</b> Dil öğelerini programa dahil etme.
+            <br /> <b>Iterator (Tekrarlayıcı)</b> Bir liste vb. ifadelerin her bir elemanına  sırayla erişme.
+            <br /> <b>Mediator (Arabulucu)</b> Sınıflarımız arasındaki iletişimi tanımlar.
+            <br /><b>Observer (Gözlemci)</b> Sınıflarda gerçekleşen değişiklikleri bildirmenin bir yöntemidir.
+            <br /><b>State (Durum)</b> Bir nesnenin durumu değiştiği zaman buna bağlı olarak davranışınıda değiştirme.
+            <br /> <b>Strategy (Strateji)</b> Sınıf içerisindeki bir algoritmayı kapsar.
+            <br /> <b>Template Method (Şablon Metodu)</b> Algoritmanın adımlarını alt sınıfa iletme.
+            <br /><b>Visitor (Ziyaretçi)</b> Bir sınıfa yeni bir işlem tanımlar.
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+                <script>
+
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://can-cuma-yaman.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+                <script>
+
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://can-cuma-yaman.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+
+
+
+    <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: black;">
+
+
+        <div class="container text-center  ">
+
+            <div class="row">
+
+                <div class="col-md-4 mx-auto">
+
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CAN CUMA YAMAN</h5>
+                    <p>Genel olarak araştırdğım, öğrendiğim veya çalışmakta olduğum konular üzerine makaleler yer almaktadır.</p>
+
+                </div>
+
+
+                <hr class="clearfix w-100 d-md-none">
+
+
+                <div class="col-md-4 mx-auto">
+
+
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Hızlı Linkler</h5>
+
+                    <ul class="list-unstyled footer-links fis">
+                        <li class="nav-item">
+                            <a href="/Home/Index" class="nav-link footer-links">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home/About" class="nav-link footer-links">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home/Contact" class="nav-link footer-links">İletişim</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <div class="col-md-4 mx-auto">
+
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ml-0">Son Yayınlanan Makaleler</h5>
+
+                    <ul class="list-unstyled  ">
+
+                        <li>
+                            <a href="#!" class="nav-link footer-links">Agile vs Waterfall</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="nav-link footer-links">Agile</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="nav-link footer-links">Waterfall Model</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="nav-link footer-links">Elasticsearch</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+
+
+
+        <hr>
+
+
+        <ul class="list-unstyled list-inline text-center">
+
+
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1 footer-links" href="https://www.linkedin.com/in/cancumayaman/">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1 footer-links" href="https://github.com/CanCumaYaman">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="footer-copyright text-center py-3">
+            © 2021 Copyright:
+            <a href="https://mdbootstrap.com/" class="footer-links"> Can Cuma YAMAN</a>
+        </div>
+
+
+    </footer>
+
+
+    <script src="script.js" asp-append-version="true"></script>
+    <script language="javascript" src="http://ir.sitekodlari.com/yukaricik1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       
+        AOS.init();
+        $('.nav-icon').click(function () {
+            $('#nav-links').toggleClass("responsive");
+            return false;
+        });
+
+        
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script id="dsq-count-scr" src="//can-cuma-yaman.disqus.com/count.js" async></script>
+</body>
+</html>
