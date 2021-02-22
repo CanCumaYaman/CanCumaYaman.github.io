@@ -334,3 +334,6 @@ a.btn.btn-success.read-m {
     .footer-links:hover {
         color: teal;
     }
+.sub-meta span{
+display:none;
+}
