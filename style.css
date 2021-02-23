@@ -21,6 +21,11 @@ border:1px solid white;
 .card-footer{
 display:none;
 }
+.pagination{
+    position:relative;
+    margin:auto;
+    margin-bottom:5px;
+}
  .pagination ul li a {
         background-color: #01CD74;
         color:white;
@@ -31,11 +36,7 @@ display:none;
             background-color: white;
             color: #01CD74;
         }
-.pagination{
-    position:relative;
-    margin:auto;
-    
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
