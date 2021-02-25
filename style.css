@@ -140,6 +140,12 @@ ul {
     .sub-meta span{
         font-size:13px;
     }
+     .articles{
+        font-size:15px;
+    }
+    .articles h3,h4{
+        font-size: 15px;
+    }
 }
 
 .text-uppercase {
